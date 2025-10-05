@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CDSC Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <main class="app-root">
+      <div class="canvas-bg"></div>
+
+      <header class="app-header">
+        <div class="logo-wrap">
+          <div class="logo-glow"></div>
+          <div class="logo">Vibeathon</div>
+        </div>
+        <div class="status">Vibeathon Assistant Online</div>
+      </header>
+
+      <section class="chat-panel" aria-label="Chat panel">
+        <div id="messages" class="messages" role="log" aria-live="polite"></div>
+
+        <div id="typing" class="typing" aria-hidden="true">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <form id="chat-form" class="composer" action="#" onsubmit="return false;">
+          <input id="input" class="input" autocomplete="off" placeholder="Ask VIBEATHON anything..." />
+          <button id="send" class="send" aria-label="Send message">Send</button>
+        </form>
+      </section>
+
+      <!-- <footer class="app-footer">
+        <div>Need more help? Contact: <strong>+91 XXXX-XXXXXX</strong></div>
+      </footer> -->
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
