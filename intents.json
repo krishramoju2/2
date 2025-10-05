@@ -1,0 +1,358 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hello", "Hey", "Good morning", "Good afternoon",
+        "Greetings", "What's up", "How are you", "Hi there",
+        "Hii", "Helloo", "Heyy", "Yo", "Sup", "Wassup",
+        "How's it going?", "Good evening", "Morning", "Afternoon",
+        "Hi bot", "Hola", "Namaste", "Bonjour",
+        "Hey bot", "Hey cds club", "Yo bro", "Wassup bot", "Hey dude",
+        "Ello", "Helo", "Hyy", "Hai", "Hlo",
+        "Wassup man", "Heya", "Hellooo", "Hiya", "Howdy",
+        "What's good", "What's happening", "Sup club",
+        "hi cds", "general hello", "anyone there", "heyy club", "talk to bot",
+        "hello chatbot", "greeting", "intro", "yo cds", "start chat",
+        "Hii", "Helloo", "Heyy", "Yo", "Sup", "Wassup",
+        "How's it going?", "Good evening", "Morning", "Afternoon",
+        "Hi bot", "Hola", "Namaste", "Bonjour",
+        "Hey bot", "Hey cds club", "Yo bro", "Wassup bot", "Hey dude",
+        "Ello", "Helo", "Hyy", "Hai", "Hlo",
+        "Wassup man", "Heya", "Hellooo", "Hiya", "Howdy",
+        "What's good", "What's happening", "Sup club",
+        "hi cds", "general hello", "anyone there", "heyy club", "talk to bot",
+        "hello chatbot", "yo cds", "start chat"
+      ],
+      "responses": [
+        "Hello! I'm the CDSC chatbot. How can I help you today?",
+        "Hi there! Welcome to CDSC. What would you like to know?",
+        "Hello! I'm the Vibeathon chatbot. How can I assist you today?",
+        "Hi there! Welcome to Vibeothon what would you like to know?",
+        " Social media, event, Vibeothon, contact, feedback, collaborations, projects , etc"
+      ]
+    },
+    {
+      "tag": "membership",
+      "patterns": [
+        "Who can join CDSC?",
+        "Can I join the club?", 
+        "How to become a member?",
+        "What are the requirements to join?",
+        "I want to be part of your organization",
+        "How do I sign up?",
+        "Can students like me participate?",
+        "Am I eligible to join?",
+        "What do I need to become a member?",
+        "How can I get involved?",
+        "I want to participate in CDSC",
+        "Membership details", "Sign up process", "Eligibility criteria",
+        "Join cds", "cdsc registration", "Be a member", "Become part",
+        "Am I allowed?", "Can anyone join?", "New member info",
+        "How to apply?", "How do I enter?", "Joining info pls",
+        "Add me to CDSC", "Interested in joining", "Wanna join",
+        "Requirements for membership", "Sign me up", "Membership rules",
+        "Join club", "How do I get in?", "Membership signup", "Enroll",
+        "Joining cds club", "Eligibility to join", "I want membership",
+        "Join process", "I want in", "How do I enroll", "Sign up cds",
+        "Join form", "Club entry", "Can outsiders join?", "Member info pls",
+        "How to become part", "Want to join", "Can freshmen join?",
+        "Am I qualified?", "Any restrictions?", "How to enroll",
+        "tell me about membership", "member info", "details about joining", "club joining", "how to join cds club",
+        "Who can join CDSC?", "Can I join the club?", "How to become a member?",
+        "What are the requirements to join?", "I want to be part of your organization",
+        "How do I sign up?", "Am I eligible to join?", "What do I need to become a member?",
+        "How can I get involved?", "I want to participate in CDSC", "Membership details",
+        "Sign up process", "Eligibility criteria", "Join cds", "cdsc registration",
+        "Be a member", "Join club", "How do I get in?", "Membership signup",
+        "Enroll", "Joining cds club", "Eligibility to join", "I want membership",
+        "Join process", "How do I enroll", "Sign up cds", "Join form", "Club entry",
+        "Can outsiders join?", "Member info pls", "Can freshmen join?", "Any restrictions?"
+      ],
+      "responses": [
+        "Anyone passionate about coding, development, and software creation can join CDSC! Whether you're a beginner or experienced developer, we welcome everyone eager to learn and contribute.",
+        "Great question! CDSC is open to all students who have an interest in coding and software development. No prior experience is required - just enthusiasm to learn!",
+        "Anyone with a passion for coding and development can join CDSC! Beginners and experienced developers are all welcome.",
+        "CDSC membership is open to all students interested in coding and software — no prior experience needed, just enthusiasm to learn and contribute."
+      ]
+    },
+    {
+      "tag": "registration",
+      "patterns": [
+        "How can I register for events?",
+        "How to sign up for XYZ event?",
+        "What's the registration process?",
+        "Where do I register?",
+        "How do I enroll for events?",
+        "What's the signup procedure?",
+        "How can I participate in events?",
+        "Where is the registration link?",
+        "How do I book a spot?",
+        "Can you help me register?",
+        "Event sign up", "How to apply for event", "Event enrollment",
+        "I want to join the workshop", "Register me", "Register for hackathon",
+        "How to book?", "How to attend?", "Sign me for event",
+        "How do I fill the form?", "Event form", "Where to sign up?",
+        "Participation link?", "Registration details",
+        "Event reg", "Sign up link pls", "How do I get in event",
+        "Event apply", "Form for event", "Where to apply", "Book event seat",
+        "I wanna register", "Event entry", "How to enroll workshop",
+        "Register cds club event", "Hackathon apply", "Event ticket",
+        "How to confirm seat", "Event sign me", "I want to register",
+        "register info", "event registration details", "sign up help", "enroll details", "participation info",
+        "How can I register for events?", "How to sign up for XYZ event?", "What's the registration process?",
+        "Where do I register?", "How do I enroll for events?", "What's the signup procedure?",
+        "How can I participate in events?", "Where is the registration link?", "How do I book a spot?",
+        "Can you help me register?", "Event sign up", "How to apply for event", "Event enrollment",
+        "I want to join the workshop", "Register me", "Register for hackathon", "How to book?",
+        "How to attend?", "Sign me for event", "Event form", "Where to sign up?",
+        "Participation link?", "Registration details", "Event reg", "Sign up link pls"
+      ],
+      "responses": [
+        "To register for events, visit the Events section on our website or follow the registration link shared on our social media platforms. Fill out the required details and you'll receive a confirmation email.",
+        "Event registration is simple! Check our website's Events section or look for registration links on our Instagram and LinkedIn pages. Just fill out the form and you're all set!",
+        "To register, check the Events section on our website or follow links on Instagram @cbitdsc and LinkedIn CBIT Developer Student Club. Once you fill the form, you'll receive a confirmation email.",
+        "Registration is simple just use the links shared on Instagram @cbitdsc and LinkedIn CBIT Developer Student Club to sign up."
+      ]
+    },
+    {
+      "tag": "event_cost",
+      "patterns": [
+        "Are events free or paid?",
+        "Do I need to pay for events?",
+        "What's the cost of events?",
+        "How much do events cost?",
+        "Are there any charges?",
+        "Is there a fee?",
+        "Do events require payment?",
+        "Are workshops free?",
+        "What about pricing?",
+        "Any registration fees?",
+        "Event charges?", "Fee details", "Is it free?", "Is entry free?",
+        "Event price", "Cost to join event", "Any money needed?",
+        "Workshop charges?", "Pay or free?", "Price info",
+        "Event fee?", "Do I pay?", "Price of hackathon", "Cost info pls",
+        "Free event?", "Any entry charge", "Is there cost?", "Event ticket price",
+        "event cost details", "payment info", "charges for event", "pricing info", "is it free or paid"
+      ],
+      "responses": [
+        "Event cost details are always mentioned in the event description. Most of our workshops and sessions are free for members, but some specialized events may have minimal fees. Check the specific event page for pricing information.",
+        "Most CDSC workshops and sessions are free, while some special events may have minimal fees. Please check the specific event page for details."
+      ]
+    },
+    {
+      "tag": "collaborations",
+      "patterns": [
+        "Are there collaborations with other clubs?",
+        "Do you work with other clubs?",
+        "Any partnerships?",
+        "Joint events with other organizations?",
+        "Do you collaborate?",
+        "Work with other societies?",
+        "Cross-club activities?",
+        "Inter-club partnerships?",
+        "Joint workshops?",
+        "Collaborative projects?",
+        "Do you team up?", "Any collabs?", "Do you partner with others?",
+        "Do you do things together?", "Events with other clubs?",
+        "Partner orgs?", "Any tie ups?", "Do you share events?",
+        "Do you host together?", "Club partnerships",
+        "Collab info", "Club collab", "Work with other groups?",
+        "Do you join hands?", "Combined events?", "Cross club collab",
+        "collaboration details", "do you work together", "joint events info", "club tie ups", "collab questions"
+      ],
+      "responses": [
+        "Yes! We frequently collaborate with other clubs to bring you joint workshops, hackathons, and more. Check our social media platforms for upcoming collaborative events.",
+        "Absolutely! CDSC regularly partners with other technical clubs and societies for hackathons, workshops, and coding competitions. Follow us on social media to stay updated!",
+        "Yes! CDSC collaborates with other clubs for workshops, hackathons, and tech events. Find updates on Instagram @cbitdsc and LinkedIn CBIT Developer Student Club.",
+        "We partner with technical groups and organizations for events and projects. Keep an eye on Instagram @cbitdsc and LinkedIn CBIT Developer Student Club for updates."
+      ]
+    },
+    {
+      "tag": "social_media",
+      "patterns": [
+        "What are the social media handles?",
+        "Where can I follow CDSC?",
+        "Instagram handle",
+        "LinkedIn page",
+        "Social media links",
+        "How to follow you?",
+        "Your social accounts?",
+        "Where do you post updates?",
+        "Social media presence",
+        "Follow on Instagram",
+        "Insta id?", "CDSC insta", "LinkedIn profile?",
+        "Facebook page?", "Twitter handle?", "Where are you online?",
+        "Give me your socials", "Club socials?", "How do I stay updated?",
+        "CDSC online presence", "Where can I connect?",
+        "Insta link pls", "Where are you active?", "CDSC fb?", "Do you have Twitter?",
+        "Club IG?", "Any social links?", "Share your insta", "Social pages?",
+        "social media info", "where to follow", "cdsc socials", "give me links", "connect online"
+      ],
+      "responses": [
+        "Follow us for updates! Instagram: @cbitdsc, LinkedIn: CBIT Developer Student Club. We post regular updates about events, workshops, and opportunities!",
+        "Follow us on Instagram @cbitdsc and LinkedIn CBIT Developer Student Club for all the latest updates, events, and workshops."
+      ]
+    },
+    {
+      "tag": "github",
+      "patterns": [
+        "Does CDSC have GitHub?",
+        "What's your GitHub repository?",
+        "GitHub link",
+        "Where are your projects?",
+        "Can I see your code?",
+        "Open source projects",
+        "Repository link",
+        "GitHub organization",
+        "Project repositories",
+        "Code contributions",
+        "Where is your GitHub?", "Git repo?", "Coding repo",
+        "Share GitHub", "Do you have code online?",
+        "Source code link?", "CDSC repo?", "Show me GitHub",
+        "Can I access your projects?", "Programming repos",
+        "GitHub profile?", "Repo link pls", "CDSC code", "Code link",
+        "Where's the repo?", "Project code access", "Git account",
+        "github info", "repo details", "share coding repos", "project link", "open source code"
+      ],
+      "responses": [
+        "Yes, we do! Check out our projects and contributions on our official GitHub organization. You can find collaborative projects, member contributions, and open-source initiatives there!",
+        "Yes! Our GitHub organization hosts open-source projects, member contributions, and collaborative work. Check it out to explore and contribute."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "How can I contact you?",
+        "Contact information",
+        "How to reach out?",
+        "Who should I contact?",
+        "Get in touch",
+        "Contact details",
+        "Reach the team",
+        "How to ask questions?",
+        "Who can help me?",
+        "Support contact",
+        "Mail id?", "Phone number?", "How do I message you?",
+        "Email address", "Help desk?", "Whom to reach?",
+        "Any support?", "CDSC helpline?", "Reach CDSC", "How do I talk to you?",
+        "Club email", "How to ping you?", "Send message?", "Connect with CDSC",
+        "Contact team", "Email CDSC", "CDSC support",
+        "contact info pls", "how to connect", "reach cds", "who to talk to", "communication details"
+      ],
+      "responses": [
+        "You can reach out to us through our social media channels or email us at cbitdsc@gmail.com. Our team is always happy to help with any questions or suggestions!",
+        "You can reach us anytime via Instagram @cbitdsc, LinkedIn CBIT Developer Student Club, or by email at cbitdsc@gmail.com."
+      ]
+    },
+    {
+      "tag": "events",
+      "patterns": [
+        "What events do you organize?",
+        "Upcoming events",
+        "What's happening?",
+        "Event schedule",
+        "Workshop details",
+        "What activities?",
+        "Current events",
+        "Event calendar",
+        "What's going on?",
+        "Latest events",
+        "Future programs?", "Event plan?", "Workshops soon?",
+        "Hackathon info?", "Next event?", "What's lined up?",
+        "Tell me about events", "Activities in CDSC", "Event updates",
+        "Any competitions?", "Club programs",
+        "Show events", "Event list", "Tell me what's coming",
+        "Hackathons soon?", "Coding events?", "Upcoming workshops?",
+        "Event info", "Events lined up", "New events?", "Event agenda",
+        "event details pls", "club events info", "activities info", "workshop schedule", "what programs running"
+      ],
+      "responses": [
+        "We organize various events including coding workshops, hackathons, tech talks, project showcases, and collaborative sessions with other clubs. Stay tuned to our announcements for more details!",
+        "We organize coding workshops, hackathons, tech talks, project showcases, and collaborations. For updates, follow Instagram @cbitdsc and LinkedIn CBIT Developer Student Club."
+      ]
+    },
+    {
+      "tag": "projects",
+      "patterns": [
+        "What projects is the club working on?",
+        "Current projects",
+        "Club initiatives", 
+        "What are you building?",
+        "Active projects",
+        "Development work",
+        "Club projects",
+        "What's being developed?",
+        "Project updates",
+        "Software projects",
+        "What are you coding?", "Ongoing work?", "Apps you build?",
+        "CDSC projects?", "What's under dev?", "Any new code?",
+        "Show me your work", "Projects list?", "What's live?",
+        "AI projects?", "Tech projects?",
+        "Project info pls", "Club builds?", "Show projects",
+        "Projects underway?", "New builds?", "What's in dev?", "Coding stuff?",
+        "project info", "club project details", "ongoing work info", "cdsc builds", "project update pls"
+      ],
+      "responses": [
+        "We're always working on exciting projects! From web applications to mobile apps, AI/ML projects to competitive programming solutions. Check our GitHub for current projects and join us to contribute!",
+        "We're working on web apps, mobile apps, and AI/ML projects. You can view and contribute to them on our GitHub."
+      ]
+    },
+    {
+      "tag": "feedback",
+      "patterns": [
+        "I have a suggestion",
+        "Can I give feedback?",
+        "I have an idea",
+        "Feedback form",
+        "Suggestions",
+        "How to provide input?",
+        "I want to suggest something",
+        "Can I propose an idea?",
+        "Feedback channel",
+        "How to contribute ideas?",
+        "I have thoughts", "How to share ideas?", "Can I review?",
+        "Where to give feedback?", "Suggest something", "Improvement ideas",
+        "Club suggestions?", "Any way to give input?", "Opinion sharing",
+        "Drop feedback?", "Provide review",
+        "Idea box", "Club improvement", "Feedback please", "Share suggestion",
+        "Input form", "I have comments", "Give feedback", "Any way to share ideas?",
+        "feedback details", "share thoughts", "give idea", "club feedback info", "improvement suggestions"
+      ],
+      "responses": [
+        "We absolutely value your suggestions and feedback! You can reach out to us via our social media channels, email, or speak to any club member. Your ideas help us improve and grow!",
+        "We'd love your feedback! Share ideas with us via Instagram @cbitdsc, LinkedIn CBIT Developer Student Club, or email us at cbitdsc@gmail.com."
+      ]
+    },
+    {
+      "tag": "vibeathonx",
+      "patterns": [
+        "Tell me about VibeathonX", "What is VibeathonX?", "VibeathonX details",
+        "When is VibeathonX?", "Where is VibeathonX?", "VibeathonX event info",
+        "Hackathon VibeathonX", "VibeathonX schedule", "VibeathonX date and venue",
+        "VibeathonX activities"
+      ],
+      "responses": [
+        "VibeathonX will be held on October 17-18 at Assembly Hall, CBIT, featuring a 24-hour hackathon and expert-led tech talks.",
+        "On October 17-18, Assembly Hall CBIT will host VibeathonX with a mix of industry talks and an exciting 24-hour hackathon.",
+        "Mark your calendars: VibeathonX at Assembly Hall, CBIT, October 17-18 - a full program of hackathon challenges and technology discussions."
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [
+        "?", "random", "idk", "no idea", "misc", "help me", "tell me something", "general info", "info pls", "club details", "what is cds club", "explain cds", "about cds", "what is this", "general question", "not sure", "details", "anything",
+        "?", "random", "idk", "no idea", "misc", "help me", "tell me something",
+        "general info", "info pls", "confused", "not sure", "say anything",
+        "details", "anything", "hmm", "weird text", "nonsense", "random words",""
+      ],
+      "responses": [
+        "I'm sorry, I don't have specific information about that. Please contact our team directly through our social media channels or email for more detailed assistance.",
+        "That's a great question! For specific queries, please reach out to our team members or check our social media pages for the most up-to-date information.",
+        "I didn't catch that. Try asking about our events, membership, or socials!",
+        "Hmm, not sure I understood. Maybe ask me about CDSC's projects, collaborations, or VibeathonX?",
+        "That seems unclear. You could try asking about registration, events, or how to connect with us on Instagram @cbitdsc and LinkedIn CBIT Developer Student Club."
+      ]
+    }
+  ]
+}
