@@ -11,9 +11,9 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
 # Environment variables
-API_KEY = os.getenv("API_KEY")
-API_URL = os.getenv("API_URL")
-MODEL_NAME = os.getenv("MODEL_NAME", "default-model")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")  # <- now expects Gemini key
+API_URL = "https://generativelanguage.googleapis.com/v1beta/models"
+MODEL_NAME = os.getenv("MODEL_NAME", "gemini-1.5-flash")  # default Gemini model
 
 
 class CDSCChatbot:
@@ -45,13 +45,13 @@ class CDSCChatbot:
 
     # -------------------- EMBEDDING / SEMANTIC MATCH --------------------
     def get_embedding(self, text):
-        """Fetch embedding vector from API (OpenAI/Gemini compatible)."""
+        """Fetch embedding vector from Gemini Embeddings API."""
         try:
-            payload = {"model": MODEL_NAME, "input": text}
-            headers = {"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"}
-            response = requests.post(f"{API_URL}/embeddings", headers=headers, json=payload, timeout=15)
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:embedText?key={GEMINI_API_KEY}"
+            payload = {"model": "text-embedding-004", "text": text}
+            response = requests.post(url, json=payload, timeout=15)
             data = response.json()
-            return np.array(data["data"][0]["embedding"])
+            return np.array(data["embedding"]["values"])
         except Exception as e:
             logger.warning(f"Embedding fetch failed: {e}")
             return np.zeros(768)  # fallback zero vector
@@ -76,7 +76,7 @@ class CDSCChatbot:
 
     # -------------------- RESPONSE GENERATION --------------------
     def generate_detailed_response(self, user_message, intent_tag):
-        """Produce a detailed, human-like reply using API."""
+        """Produce a detailed, human-like reply using Gemini API."""
         intent = next((i for i in self.intents if i.get("tag") == intent_tag), None)
         style_examples = ", ".join(intent.get("responses", [])) if intent else ""
 
@@ -96,20 +96,20 @@ class CDSCChatbot:
             "Craft a detailed, helpful, friendly, and context-aware response."
         )
 
-        payload = {
-            "model": MODEL_NAME,
-            "messages": [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": prompt}
-            ]
-        }
-
-        headers = {"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"}
-
         try:
-            response = requests.post(API_URL, headers=headers, json=payload, timeout=20)
+            url = f"{API_URL}/{MODEL_NAME}:generateContent?key={GEMINI_API_KEY}"
+            payload = {"contents": [{"parts": [{"text": system_prompt + "\n\n" + prompt}]}]}
+            response = requests.post(url, json=payload, timeout=20)
             data = response.json()
-            reply = data.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
+
+            reply = (
+                data.get("candidates", [{}])[0]
+                .get("content", {})
+                .get("parts", [{}])[0]
+                .get("text", "")
+                .strip()
+            )
+
             if not reply:
                 reply = random.choice(intent.get("responses", [])) if intent else "I'm here to help!"
             return reply
